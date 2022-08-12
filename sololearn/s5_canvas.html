@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas in html</title>
+</head>
+<body>
+    <canvas id="canvas1" width="400" height="300"    ></canvas>
+    <script>
+        let can = document.getElementById('canvas1');
+        let ctx = can.getContext('2d');
+        /*
+        ctx.fillStyle = "rgba(0,200,0,1)";
+        ctx.fillRect(20,20,100,100);
+        moveTo(10,10);
+        lineTo(100,100);
+        */
+        ctx.font = "bold 20px Tahoma";
+        ctx.textAlign = "start";
+        ctx.fillText = ("start",10,30);
+        ctx.translate(100,150);
+        ctx.fillText("after translate",0,0);
+    </script>
+</body>
+</html>
